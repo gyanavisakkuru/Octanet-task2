@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form input, form select, form button {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+#taskList {
+    margin-top: 20px;
+}
+
+.task {
+    background: white;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task .task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task .task-header h3 {
+    margin: 0;
+}
+
+.task .task-header .priority {
+    background: #ff5959;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.task .task-header .priority.Medium {
+    background: #ffcc00;
+}
+
+.task .task-header .priority.Low {
+    background: #4CAF50;
+}
+
+.task p {
+    margin: 10px 0 0;
+}
+
+.task-status {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.task-status button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.task-status .in-progress {
+    background-color: #ffcc00;
+    color: white;
+}
+
+.task-status .completed {
+    background-color: #4CAF50;
+    color: white;
+}
